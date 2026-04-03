@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop | LACOMUS - Signature Scents That Define Your Identity</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">LACOMUS</a>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="shop.html" class="active">Shop</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="#" class="cart-btn"><i class="fas fa-shopping-bag"></i> <span class="cart-count">0</span></a>
+            </div>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Shop Header -->
+    <section class="shop-header">
+        <div class="container">
+            <div class="shop-header-content">
+                <h1>Our Signature Collection</h1>
+                <p>Discover luxury perfumes crafted for moments that matter. Each scent tells a unique story.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filters -->
+    <section class="filters">
+        <div class="container">
+            <div class="filters-container">
+                <div class="filter-group">
+                    <button class="filter-btn active" data-filter="all">All Scents</button>
+                    <button class="filter-btn" data-filter="men">For Men</button>
+                    <button class="filter-btn" data-filter="women">For Women</button>
+                    <button class="filter-btn" data-filter="unisex">Unisex</button>
+                </div>
+                <div class="filter-group">
+                    <select class="sort-select">
+                        <option value="featured">Featured</option>
+                        <option value="popular">Most Popular</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                        <option value="new">New Arrivals</option>
+                    </select>
+                </div>
+            </div>
+            <div class="stock-alert">
+                <p><i class="fas fa-fire"></i> Limited stock available - Order now to secure your scent!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="shop-products">
+        <div class="container">
+            <div class="products-grid">
+                <!-- Midnight Ember -->
+                <div class="product-card" data-category="men" data-popular="true">
+                    <div class="product-badge best-seller">Best Seller</div>
+                    <div class="product-stock">
+                        <div class="stock-counter">
+                            <i class="fas fa-exclamation-circle"></i>
+                            <span>Only 12 bottles left</span>
+                        </div>
+                    </div>
+                    <div class="product-image" style="background: linear-gradient(135deg, #1a1a1a 0%, #D4AF37 100%);"></div>
+                    <div class="product-info">
+                        <h3>Midnight Ember</h3>
+                        <p class="product-description">Seductive amber and musk blend designed for unforgettable nights and lasting impressions.</p>
+                        <div class="product-scent">
+                            <small><strong>Top:</strong> Bergamot, Citrus</small><br>
+                            <small><strong>Middle:</strong> Lavender</small><br>
+                            <small><strong>Base:</strong> Musk, Amber</small>
+                        </div>
+                        <div class="product-specs">
+                            <p><i class="fas fa-clock"></i> Lasts 10+ hours</p>
+                            <p><i class="fas fa-bullhorn"></i> Strong projection</p>
+                            <p><i class="fas fa-heart"></i> Perfect for dates / events</p>
+                        </div>
+                        <div class="product-price">
+                            <span class="price">₱1,299</span>
+                            <span class="old-price">₱1,899</span>
+                            <span class="discount">-32%</span>
+                        </div>
+                        <div class="product-urgency">
+                            <p><i class="fas fa-bolt"></i> High demand scent</p>
+                        </div>
+                        <button class="btn btn-add-to-cart" data-id="1">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Noir Mystique -->
+                <div class="product-card" data-category="men" data-popular="true">
+                    <div class="product-badge">Most Seductive</div>
+                    <div class="product-stock">
+                        <div class="stock-counter">
+                            <i class="fas fa-exclamation-circle"></i>
+                            <span>Only 8 bottles left</span>
+                        </div>
+                    </div>
+                    <div class="product-image" style="background: linear-gradient(135deg, #2a2a2a 0%, #8B0000 100%);"></div>
+                    <div class="product-info">
+                        <h3>Noir Mystique</h3>
+                        <p class="product-description">Dark, mysterious blend of oud and leather with subtle vanilla notes for enigmatic presence.</p>
+                        <div class="product-scent">
+                            <small><strong>Top:</strong> Pink Pepper</small><br>
+                            <small><strong>Middle:</strong> Rose, Oud</small><br>
+                            <small><strong>Base:</strong> Leather, Vanilla</small>
+                        </div>
+                        <div class="product-specs">
+                            <p><i class="fas fa-clock"></i> Lasts 12+ hours</p>
+                            <p><i class="fas fa-bullhorn"></i> Intense projection</p>
+                            <p><i class="fas fa-moon"></i> Evening elegance</p>
+                        </div>
+                        <div class="product-price">
+                            <span class="price">₱1,399</span>
+                            <span class="old-price">₱1,999</span>
+                            <span class="discount">-30%</span>
+                        </div>
+                        <button class="btn btn-add-to-cart" data-id="2">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Ocean Breeze -->
+                <div class="product-card" data-category="unisex" data-popular="true">
+                    <div class="product-badge">Fresh & Clean</div>
+                    <div class="product-image" style="background: linear-gradient(135deg, #3a3a3a 0%, #0096FF 100%);"></div>
+                    <div class="product-info">
+                        <h3>Ocean Breeze</h3>
+                        <p class="product-description">Fresh aquatic scent with marine notes and white musk for everyday confidence.</p>
+                        <div class="product-scent">
+                            <small><strong>Top:</strong> Sea Salt, Bergamot</small><br>
+                            <small><strong>Middle:</strong> Jasmine, Lily</small><br>
+                            <small><strong>Base:</strong> White Musk</small>
+                        </div>
+                        <div class="product-specs">
+                            <p><i class="fas fa-clock"></i> Lasts 8+ hours</p>
+                            <p><i class="fas fa-sun"></i> Daytime fresh</p>
+                            <p><i class="fas fa-water"></i> Clean & refreshing</p>
+                        </div>
+                        <div class="product-price">
+                            <span class="price">₱1,199</span>
+                            <span class="old-price">₱1,699</span>
+                            <span class="discount">-29%</span>
+                        </div>
+                        <button class="btn btn-add-to-cart" data-id="3">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Velvet Rose -->
+                <div class="product-card" data-category="women">
+                    <div class="product-badge">New Arrival</div>
+                    <div class="product-image" style="background: linear-gradient(135deg, #4a2a2a 0%, #FF6B6B 100%);"></div>
+                    <div class="product-info">
+                        <h3>Velvet Rose</h3>
+                        <p class="product-description">Romantic rose and peony blend with vanilla base for feminine sophistication.</p>
+                        <div class="product-scent">
+                            <small><strong>Top:</strong> Pink Pepper, Lychee</small><br>
+                            <small><strong>Middle:</strong> Rose, Peony</small><br>
+                            <small><strong>Base:</strong> Vanilla, Sandalwood</small>
+                        </div>
+                        <div class="product-specs">
+                            <p><i class="fas fa-clock"></i> Lasts 10+ hours</p>
+                            <p><i class="fas fa-heart"></i> Romantic occasions</p>
+                            <p><i class="fas fa-female"></i> Feminine elegance</p>
+                        </div>
+                        <div class="product-price">
+                            <span class="price">₱1,499</span>
+                            <span class="old-price">₱2,199</span>
+                            <span class="discount">-32%</span>
+                        </div>
+                        <button class="btn btn-add-to-cart" data-id="4">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Citrus Zest -->
+                <div class="product-card" data-category="unisex">
+                    <div class="product-image" style="background: linear-gradient(135deg, #3a4a2a 0%, #FFD700 100%);"></div>
+                    <div class="product-info">
+                        <h3>Citrus Zest</h3>
+                        <p class="product-description">Energetic citrus blend with green tea notes for uplifting everyday wear.</p>
+                        <div class="product-scent">
+                            <small><strong>Top:</strong> Grapefruit, Lemon</small><br>
+                            <small><strong>Middle:</strong> Green Tea, Mint</small><br>
+                            <small><strong>Base:</strong> Amber, Musk</small>
+                        </div>
+                        <div class="product-specs">
+                            <p><i class="fas fa-clock"></i> Lasts 6-8 hours</p>
+                            <p><i class="fas fa-bolt"></i> Energizing fresh</p>
+                            <p><i class="fas fa-briefcase"></i> Office friendly</p>
+                        </div>
+                        <div class="product-price">
+                            <span class="price">₱999</span>
+                            <span class="old-price">₱1,499</span>
+                            <span class="discount">-33%</span>
+                        </div>
+                        <button class="btn btn-add-to-cart" data-id="5">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Amber Woods -->
+                <div class="product-card" data-category="men">
+                    <div class="product-stock">
+                        <div class="stock-counter limited">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            <span>Last 5 bottles!</span>
+                        </div>
+                    </div>
+                    <div class="product-image" style="background: linear-gradient(135deg, #2a3a2a 0%, #8B7355 100%);"></div>
+                    <div class="product-info">
+                        <h3>Amber Woods</h3>
+                        <p class="product-description">Warm woody blend with amber and cedar for sophisticated masculine presence.</p>
+                        <div class="product-scent">
+                            <small><strong>Top:</strong> Cardamom, Saffron</small><br>
+                            <small><strong>Middle:</strong> Cedar, Vetiver</small><br>
+                            <small><strong>Base:</strong> Amber, Patchouli</small>
+                        </div>
+                        <div class="product-specs">
+                            <p><i class="fas fa-clock"></i> Lasts 12+ hours</p>
+                            <p><i class="fas fa-tree"></i> Woody depth</p>
+                            <p><i class="fas fa-user-tie"></i> Professional elegance</p>
+                        </div>
+                        <div class="product-price">
+                            <span class="price">₱1,599</span>
+                            <span class="old-price">₱2,299</span>
+                            <span class="discount">-30%</span>
+                        </div>
+                        <div class="product-urgency">
+                            <p><i class="fas fa-fire"></i> Limited edition - Selling fast!</p>
+                        </div>
+                        <button class="btn btn-add-to-cart" data-id="6">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bundle Offer -->
+    <section class="bundle-offer">
+        <div class="container">
+            <div class="bundle-content">
+                <div class="bundle-badge">Bundle Deal</div>
+                <h2>Buy 2 Get 10% Off</h2>
+                <p>Create your signature scent combination. Mix and match any two perfumes.</p>
+                <div class="bundle-price">
+                    <span class="price">Save up to ₱300</span>
+                </div>
+                <div class="bundle-timer">
+                    <p><i class="fas fa-clock"></i> Offer ends in: <span id="bundle-timer">24:59:59</span></p>
+                </div>
+                <button class="btn btn-primary btn-large">Shop Bundle Deal</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">Why Our Customers Love LACOMUS</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Midnight Ember got me more compliments in one week than I've gotten all year!"</p>
+                    <div class="testimonial-author">
+                        <strong>Miguel T.</strong>
+                        <span>Verified Buyer</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"The quality is incredible. Lasts all day and night without fading."</p>
+                    <div class="testimonial-author">
+                        <strong>Sophia G.</strong>
+                        <span>Verified Buyer</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Found my signature scent! Ocean Breeze is perfect for everyday confidence."</p>
+                    <div class="testimonial-author">
+                        <strong>David L.</strong>
+                        <span>Verified Buyer</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Free Shipping Banner -->
+    <section class="shipping-banner">
+        <div class="container">
+            <div class="banner-content">
+                <div class="banner-item">
+                    <i class="fas fa-shipping-fast"></i>
+                    <div>
+                        <h4>Free Shipping</h4>
+                        <p>On orders over ₱2,000</p>
+                    </div>
+                </div>
+                <div class="banner-item">
+                    <i class="fas fa-undo-alt"></i>
+                    <div>
+                        <h4>30-Day Returns</h4>
+                        <p>Hassle-free returns</p>
+                    </div>
+                </div>
+                <div class="banner-item">
+                    <i class="fas fa-shield-alt"></i>
+                    <div>
+                        <h4>Secure Payment</h4>
+                        <p>100% secure checkout</p>
+                    </div>
+                </div>
+                <div class="banner-item">
+                    <i class="fas fa-headset"></i>
+                    <div>
+                        <h4>24/7 Support</h4>
+                        <p>We're here to help</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>LACOMUS</h3>
+                    <p>Signature scents that define your identity. Long-lasting luxury perfumes at accessible prices.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Shop</h4>
+                    <a href="shop.html">All Perfumes</a>
+                    <a href="#">For Men</a>
+                    <a href="#">For Women</a>
+                    <a href="#">Best Sellers</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <a href="contact.html">Contact Us</a>
+                    <a href="#">FAQ</a>
+                    <a href="#">Shipping & Returns</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Payment Methods</h4>
+                    <div class="payment-methods">
+                        <span>GCash</span>
+                        <span>PayMaya</span>
+                        <span>COD</span>
+                        <span>Credit/Debit</span>
+                    </div>
+                    <div class="trust-signals">
+                        <p><i class="fas fa-shield-alt"></i> Secure Checkout</p>
+                        <p><i class="fas fa-truck"></i> Free Shipping over ₱2,000</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 LACOMUS. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Shopping Cart Modal -->
+    <div class="cart-modal">
+        <div class="cart-modal-content">
+            <div class="cart-modal-header">
+                <h3>Your Cart</h3>
+                <button class="cart-close">&times;</button>
+            </div>
+            <div class="cart-items">
+                <p class="cart-empty">Your cart is empty</p>
+            </div>
+            <div class="cart-total">
+                <p>Total: <span class="cart-total-price">₱0</span></p>
+                <button class="btn btn-primary btn-checkout">Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Filter functionality
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                
+                const filter = btn.dataset.filter;
+                document.querySelectorAll('.product-card').forEach(card => {
+                    if (filter === 'all' || card.dataset.category === filter) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Bundle timer
+        function updateBundleTimer() {
+            const timerElement = document.getElementById('bundle-timer');
+            let time = 24 * 60 * 60; // 24 hours in seconds
+            
+            setInterval(() => {
+                const hours = Math.floor(time / 3600);
+                const minutes = Math.floor((time % 3600) / 60);
+                const seconds = time % 60;
+                
+                timerElement.textContent = 
+                    `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+                
+                time--;
+                if (time < 0) time = 24 * 60 * 60; // Reset after 24 hours
+            }, 1000);
+        }
+        
+        updateBundleTimer();
+    </script>
+</body>
+</html>
